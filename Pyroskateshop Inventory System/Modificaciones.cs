@@ -77,35 +77,29 @@ namespace Pyroskateshop_Inventory_System
                     costod = decimal.Parse(costoDolares);
                 }
 
-                if (cant == 0)
+                DialogResult result = MessageBox.Show("¿Desea modificar el artículo con esos datos?",
+                "Modificar", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
                 {
-                    MessageBox.Show("Cantidad no puede ser igual a 0");
+                    Categoria c = new Categoria();
+                    c.Id = categoria + 1;
+                    articulo.Categoria = c;
+                    articulo.Descripcion = descripcion;
+                    articulo.Marca = marca;
+                    articulo.Medida = medida;
+                    articulo.CantExistencia = cant;
+                    articulo.CostoCompra = costoc;
+                    articulo.CostoDolares = costod;
+                    articulo.PrecioVenta = preciov;
+                    articulo.Estado = "Activo";
+
+                    manager.ArticuloTable.Modificar(articulo);
+
+                    MessageBox.Show("Se modificó el artículo correctamente", "Correcto");
+                    this.Dispose();   
                 }
-                else
-                {
-                    DialogResult result = MessageBox.Show("¿Desea modificar un artículo con esos datos?",
-                        "Ingresar artículo", MessageBoxButtons.YesNo);
 
-                    if (result == DialogResult.Yes)
-                    {
-                        Categoria c = new Categoria();
-                        c.Id = categoria + 1;
-                        articulo.Categoria = c;
-                        articulo.Descripcion = descripcion;
-                        articulo.Marca = marca;
-                        articulo.Medida = medida;
-                        articulo.CantExistencia = cant;
-                        articulo.CostoCompra = costoc;
-                        articulo.CostoDolares = costod;
-                        articulo.PrecioVenta = preciov;
-                        articulo.Estado = "Activo";
-
-                        manager.ArticuloTable.Modificar(articulo);
-
-                        MessageBox.Show("Se modificó el artículo correctamente", "Bien hecho");
-                        this.Dispose();
-                    }
-                }
             }
         }
 

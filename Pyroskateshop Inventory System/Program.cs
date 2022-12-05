@@ -14,7 +14,7 @@ namespace Pyroskateshop_Inventory_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new InicioDeSesion());
-            Application.Run(new SistemaDeInventario());
+            Application.Run(new InicioDeSesion());
         }
     }
 }

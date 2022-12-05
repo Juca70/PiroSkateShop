@@ -80,7 +80,7 @@ namespace Pyroskateshop_Inventory_System
 
                         manager.ArticuloTable.Insertar(articulo);
 
-                        MessageBox.Show("Se agregó el artículo correctamente", "Bien hecho");
+                        MessageBox.Show("Se agregó el artículo correctamente", "Correcto");
                         tbDescripcion.Text = "";
                         tbMarca.Text = "";
                         tbMedida.Text = "";

@@ -118,12 +118,12 @@ namespace Pyroskateshop_Inventory_System
                 }
                 else
                 {
-                    MessageBox.Show("Contraseña o nombre de usuario incorrectos");
+                    MessageBox.Show("Contraseña o nombre de usuario incorrectos", "Error");
                 }
             }
             else
             {
-                MessageBox.Show("Llena todos los campos");
+                MessageBox.Show("Llena todos los campos", "Error");
             }
         }
     }

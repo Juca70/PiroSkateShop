@@ -47,7 +47,7 @@ namespace Pyroskateshop_Inventory_System
         {
             if (this.dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
             {
-                DialogResult result = MessageBox.Show("¿Estás seguro que deseas eliminar el artículo?", "Eliminar", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("¿Estás seguro de eliminar el artículo?", "Eliminar", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     int id = int.Parse(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
