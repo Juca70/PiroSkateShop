@@ -1,0 +1,43 @@
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.exe.config
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.exe
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.pdb
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Properties.Resources.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.exe
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.pdb
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.CopyComplete
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Inicio.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.AgregarArticulo.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.SistemaDeInventario.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.InicioDeSesion.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\System.Data.SqlClient.dll
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\System.Data.SqlClient.xml
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Inventario.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Modificaciones.resources
+C:\Users\DELL\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Filtrar.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.exe.config
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.exe
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\Pyroskateshop Inventory System.pdb
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\System.Data.SqlClient.dll
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\bin\Debug\System.Data.SqlClient.xml
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.AssemblyReference.cache
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.SuggestedBindingRedirects.cache
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.AgregarArticulo.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Filtrar.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.InicioDeSesion.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Inventario.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Modificaciones.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.SistemaDeInventario.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Inicio.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop_Inventory_System.Properties.Resources.resources
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.GenerateResource.cache
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.CoreCompileInputs.cache
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.csproj.CopyComplete
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.exe
+C:\Users\juang\source\repos\Pyroskateshop Inventory System\Pyroskateshop Inventory System\Pyroskateshop Inventory System\obj\Debug\Pyroskateshop Inventory System.pdb

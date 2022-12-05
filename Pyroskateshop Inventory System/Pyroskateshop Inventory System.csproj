@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pyroskateshop_Inventory_System</RootNamespace>
+    <AssemblyName>Pyroskateshop Inventory System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\Documents\Krypton\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarArticulo.Designer.cs">
+      <DependentUpon>AgregarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filtrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtrar.Designer.cs">
+      <DependentUpon>Filtrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioDeSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioDeSesion.Designer.cs">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Entidad\Articulo.cs" />
+    <Compile Include="Modelo\Entidad\Categoria.cs" />
+    <Compile Include="Modelo\Entidad\Usuario.cs" />
+    <Compile Include="Modelo\Table\ArticuloTable.cs" />
+    <Compile Include="Modelo\Table\Table.cs" />
+    <Compile Include="Modelo\Table\TableManager.cs" />
+    <Compile Include="Modelo\Table\UsuarioTable.cs" />
+    <Compile Include="Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificaciones.Designer.cs">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaDeInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemaDeInventario.Designer.cs">
+      <DependentUpon>SistemaDeInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarArticulo.resx">
+      <DependentUpon>AgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtrar.resx">
+      <DependentUpon>Filtrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioDeSesion.resx">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificaciones.resx">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SistemaDeInventario.resx">
+      <DependentUpon>SistemaDeInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PyroLogoMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonAgregarMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModificacionesMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarritoMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerramientasMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarSesionMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonAgregarMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PyroLogoMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarMenuLateral2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarritoMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReporteMenuLateral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerramientasMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarSesionMenuLateral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PyroLogoMenuLateral2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultarInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarritoInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReporteInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerramientasInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarVentana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizarVentana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

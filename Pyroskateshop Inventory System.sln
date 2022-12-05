@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pyroskateshop Inventory System", "Pyroskateshop Inventory System\Pyroskateshop Inventory System.csproj", "{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8576D2DB-FA10-4689-808A-6A6DFC2F9A43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A17227F5-EF12-4FBF-B172-8953F6814183}
+	EndGlobalSection
+EndGlobal
