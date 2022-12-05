@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblAgregarArticulo = new System.Windows.Forms.Label();
-            this.tbDescripcion = new System.Windows.Forms.TextBox();
+            this.tbBusqueda = new System.Windows.Forms.TextBox();
             this.btnDescripcion = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -63,18 +63,21 @@
             this.lblAgregarArticulo.TabIndex = 1;
             this.lblAgregarArticulo.Text = "ARTÍCULOS";
             // 
-            // tbDescripcion
+            // tbBusqueda
             // 
-            this.tbDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(228)))));
-            this.tbDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDescripcion.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.tbDescripcion.Location = new System.Drawing.Point(93, 96);
-            this.tbDescripcion.MaxLength = 50;
-            this.tbDescripcion.Name = "tbDescripcion";
-            this.tbDescripcion.Size = new System.Drawing.Size(894, 18);
-            this.tbDescripcion.TabIndex = 37;
-            this.tbDescripcion.Text = "Buscar por descripción, precio, existencias, etc";
+            this.tbBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(228)))));
+            this.tbBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbBusqueda.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.tbBusqueda.Location = new System.Drawing.Point(93, 96);
+            this.tbBusqueda.MaxLength = 50;
+            this.tbBusqueda.Name = "tbBusqueda";
+            this.tbBusqueda.Size = new System.Drawing.Size(894, 18);
+            this.tbBusqueda.TabIndex = 37;
+            this.tbBusqueda.Text = "Buscar por descripción";
+            this.tbBusqueda.TextChanged += new System.EventHandler(this.tbBusqueda_TextChanged);
+            this.tbBusqueda.Enter += new System.EventHandler(this.tbBusqueda_Enter);
+            this.tbBusqueda.Leave += new System.EventHandler(this.tbBusqueda_Leave);
             // 
             // btnDescripcion
             // 
@@ -249,6 +252,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Inventario
             // 
@@ -260,7 +264,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonLogoMenu);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.tbDescripcion);
+            this.Controls.Add(this.tbBusqueda);
             this.Controls.Add(this.lblAgregarArticulo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDescripcion);
@@ -276,7 +280,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblAgregarArticulo;
-        private System.Windows.Forms.TextBox tbDescripcion;
+        private System.Windows.Forms.TextBox tbBusqueda;
         private System.Windows.Forms.Button btnDescripcion;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button button1;

@@ -30,8 +30,8 @@ namespace Pyroskateshop_Inventory_System
             if (descripcion == "" || marca == "" || cantExistencias == "" || costoCompra == "" ||
                 precioVenta == "")
             {
-                MessageBox.Show("Los siguientes campos no pueden estar vacíos: descripción, marca," +
-                    "existencias, costo de compra y precio de venta.");
+                MessageBox.Show("Los siguientes campos no pueden estar vacíos: descripción, marca, " +
+                    "existencias, costo de compra y precio de venta.", "Error");
             }
             else
             {

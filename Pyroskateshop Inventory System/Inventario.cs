@@ -1,6 +1,8 @@
 ﻿using Pyroskateshop_Inventory_System.Modelo.Entidad;
 using Pyroskateshop_Inventory_System.Modelo.Table;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pyroskateshop_Inventory_System
@@ -13,12 +15,12 @@ namespace Pyroskateshop_Inventory_System
         {
             InitializeComponent();
             tableManager = new TableManager();
-            inicializarTabla();
+            inicializarTabla(tableManager.ArticuloTable.ObtenerTodos());
         }
 
-        private void inicializarTabla()
+        private void inicializarTabla(List<Articulo> lista)
         {
-            List<Articulo> articulos = tableManager.ArticuloTable.ObtenerTodos();
+            List<Articulo> articulos = lista;
             foreach (Articulo articulo in articulos)
             {
                 int row = dataGridView1.Rows.Add();
@@ -38,32 +40,7 @@ namespace Pyroskateshop_Inventory_System
 
         private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            /*if (e.ColumnIndex >= 0 && this.dataGridView1.Columns[e.ColumnIndex].Name == "Modificar" && e.RowIndex >= 0)
-            {
-                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
-
-                DataGridViewButtonCell celBoton = this.dataGridView1.Rows[e.RowIndex].Cells["Modificar"] as DataGridViewButtonCell;
-                Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\Modificar.ico");
-                e.Graphics.DrawIcon(icoAtomico, e.CellBounds.Left + 3, e.CellBounds.Top + 3);
-
-                this.dataGridView1.Rows[e.RowIndex].Height = icoAtomico.Height + 8;
-                this.dataGridView1.Columns[e.ColumnIndex].Width = icoAtomico.Width + 8;
-
-                e.Handled = true;
-            }
-            if (e.ColumnIndex >= 0 && this.dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
-            {
-                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
-
-                DataGridViewButtonCell celBoton = this.dataGridView1.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
-                Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\Eliminar.ico");
-                e.Graphics.DrawIcon(icoAtomico, e.CellBounds.Left + 3, e.CellBounds.Top + 3);
-
-                this.dataGridView1.Rows[e.RowIndex].Height = icoAtomico.Height + 8;
-                this.dataGridView1.Columns[e.ColumnIndex].Width = icoAtomico.Width + 8;
-
-                e.Handled = true;
-            }*/
+            
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -80,7 +57,7 @@ namespace Pyroskateshop_Inventory_System
                     //dataGridView1.(dataGridView1.CurrentRow);
 
                     dataGridView1.Rows.Clear();
-                    inicializarTabla();
+                    inicializarTabla(tableManager.ArticuloTable.ObtenerTodos());
                     dataGridView1.Refresh();
                 }
             }
@@ -94,7 +71,54 @@ namespace Pyroskateshop_Inventory_System
                 form.ShowDialog();
 
                 dataGridView1.Rows.Clear();
-                inicializarTabla();
+                inicializarTabla(tableManager.ArticuloTable.ObtenerTodos());
+                dataGridView1.Refresh();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, System.EventArgs e)
+        {
+            Filtrar form = new Filtrar();
+            form.ShowDialog();
+        }
+
+        private void tbBusqueda_TextChanged(object sender, System.EventArgs e)
+        {
+            string text = tbBusqueda.Text.Trim().ToLower();
+
+            List<Articulo> lista = new List<Articulo>();
+
+            foreach (Articulo articulo in tableManager.ArticuloTable.ObtenerTodos())
+            {
+                if (articulo.Descripcion.ToLower().Contains(text))
+                {
+                    lista.Add(articulo);
+                }
+            }
+
+            dataGridView1.Rows.Clear();
+            inicializarTabla(lista);
+            dataGridView1.Refresh();
+        }
+
+        private void tbBusqueda_Enter(object sender, System.EventArgs e)
+        {
+            if (tbBusqueda.Text == "Buscar por descripción")
+            {
+                tbBusqueda.Text = "";
+                tbBusqueda.ForeColor = Color.Black;
+            }
+        }
+
+        private void tbBusqueda_Leave(object sender, System.EventArgs e)
+        {
+            if (tbBusqueda.Text == "")
+            {
+                tbBusqueda.Text = "Buscar por descripción";
+                tbBusqueda.ForeColor = Color.DimGray;
+
+                dataGridView1.Rows.Clear();
+                inicializarTabla(tableManager.ArticuloTable.ObtenerTodos());
                 dataGridView1.Refresh();
             }
         }

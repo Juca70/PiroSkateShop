@@ -37,6 +37,9 @@ namespace Pyroskateshop_Inventory_System.Modelo.Table
         private const string SELECTBYCATEGORIA =
             SELECTALL + " WHERE C.descripcion = @descrip";
 
+        private const string SELECTBYDESCRIPCION =
+           SELECTALL + " WHERE A.descripcion LIKE '%@descrip%'";
+
         private const string INSERT =
             "INSERT INTO Articulo (categoria, descripcion, marca, medida, " +
             "cant_existencias, costo_compra, costo_dolares, precio_venta, estado) " +
@@ -188,6 +191,28 @@ namespace Pyroskateshop_Inventory_System.Modelo.Table
             {
                 SqlCommand cmd = new SqlCommand(SELECTBYTIPO, conn);
                 cmd.Parameters.AddWithValue("@tipo", tipo);
+
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lista.Add(Convertir(reader));
+                }
+            }
+
+            return lista;
+        }
+
+        public List<Articulo> ObtenerPorDescripcion(string descripcion)
+        {
+            List<Articulo> lista = new List<Articulo>();
+
+            using (SqlConnection conn = new SqlConnection(stringConnection))
+            {
+                SqlCommand cmd = new SqlCommand(SELECTBYDESCRIPCION, conn);
+                cmd.Parameters.AddWithValue("@descrip", descripcion);
 
                 conn.Open();
 
