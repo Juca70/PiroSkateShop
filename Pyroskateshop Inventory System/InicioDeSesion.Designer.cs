@@ -30,6 +30,8 @@
         {
             this.panel = new System.Windows.Forms.Panel();
             this.panelEncabezado = new System.Windows.Forms.Panel();
+            this.pictureBoxMinimizarVentana = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCerrarVentana = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelRecuperarContrasena = new System.Windows.Forms.Label();
             this.buttonIngresar = new System.Windows.Forms.Button();
@@ -40,14 +42,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBoxMinimizarVentana = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCerrarVentana = new System.Windows.Forms.PictureBox();
             this.buttonLogoMenu = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             this.panelEncabezado.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimizarVentana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrarVentana)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -71,6 +71,33 @@
             this.panelEncabezado.Size = new System.Drawing.Size(512, 50);
             this.panelEncabezado.TabIndex = 1;
             this.panelEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelEncabezado_MouseDown);
+            // 
+            // pictureBoxMinimizarVentana
+            // 
+            this.pictureBoxMinimizarVentana.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.MinimizarVentana;
+            this.pictureBoxMinimizarVentana.Location = new System.Drawing.Point(434, 12);
+            this.pictureBoxMinimizarVentana.Name = "pictureBoxMinimizarVentana";
+            this.pictureBoxMinimizarVentana.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxMinimizarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxMinimizarVentana.TabIndex = 1;
+            this.pictureBoxMinimizarVentana.TabStop = false;
+            this.pictureBoxMinimizarVentana.Click += new System.EventHandler(this.pictureBoxMinimizarVentana_Click);
+            this.pictureBoxMinimizarVentana.MouseLeave += new System.EventHandler(this.pictureBoxMinimizarVentana_MouseLeave);
+            this.pictureBoxMinimizarVentana.MouseHover += new System.EventHandler(this.pictureBoxMinimizarVentana_MouseHover);
+            // 
+            // pictureBoxCerrarVentana
+            // 
+            this.pictureBoxCerrarVentana.BackColor = System.Drawing.Color.White;
+            this.pictureBoxCerrarVentana.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.CerrarVentana;
+            this.pictureBoxCerrarVentana.Location = new System.Drawing.Point(470, 12);
+            this.pictureBoxCerrarVentana.Name = "pictureBoxCerrarVentana";
+            this.pictureBoxCerrarVentana.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxCerrarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxCerrarVentana.TabIndex = 0;
+            this.pictureBoxCerrarVentana.TabStop = false;
+            this.pictureBoxCerrarVentana.Click += new System.EventHandler(this.pictureBoxCerrarVentana_Click);
+            this.pictureBoxCerrarVentana.MouseLeave += new System.EventHandler(this.pictureBoxCerrarVentana_MouseLeave);
+            this.pictureBoxCerrarVentana.MouseHover += new System.EventHandler(this.pictureBoxCerrarVentana_MouseHover);
             // 
             // panel2
             // 
@@ -206,33 +233,6 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "It\'s all about fun";
             // 
-            // pictureBoxMinimizarVentana
-            // 
-            this.pictureBoxMinimizarVentana.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.MinimizarVentana;
-            this.pictureBoxMinimizarVentana.Location = new System.Drawing.Point(434, 12);
-            this.pictureBoxMinimizarVentana.Name = "pictureBoxMinimizarVentana";
-            this.pictureBoxMinimizarVentana.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxMinimizarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxMinimizarVentana.TabIndex = 1;
-            this.pictureBoxMinimizarVentana.TabStop = false;
-            this.pictureBoxMinimizarVentana.Click += new System.EventHandler(this.pictureBoxMinimizarVentana_Click);
-            this.pictureBoxMinimizarVentana.MouseLeave += new System.EventHandler(this.pictureBoxMinimizarVentana_MouseLeave);
-            this.pictureBoxMinimizarVentana.MouseHover += new System.EventHandler(this.pictureBoxMinimizarVentana_MouseHover);
-            // 
-            // pictureBoxCerrarVentana
-            // 
-            this.pictureBoxCerrarVentana.BackColor = System.Drawing.Color.White;
-            this.pictureBoxCerrarVentana.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.CerrarVentana;
-            this.pictureBoxCerrarVentana.Location = new System.Drawing.Point(470, 12);
-            this.pictureBoxCerrarVentana.Name = "pictureBoxCerrarVentana";
-            this.pictureBoxCerrarVentana.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxCerrarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxCerrarVentana.TabIndex = 0;
-            this.pictureBoxCerrarVentana.TabStop = false;
-            this.pictureBoxCerrarVentana.Click += new System.EventHandler(this.pictureBoxCerrarVentana_Click);
-            this.pictureBoxCerrarVentana.MouseLeave += new System.EventHandler(this.pictureBoxCerrarVentana_MouseLeave);
-            this.pictureBoxCerrarVentana.MouseHover += new System.EventHandler(this.pictureBoxCerrarVentana_MouseHover);
-            // 
             // buttonLogoMenu
             // 
             this.buttonLogoMenu.BackColor = System.Drawing.Color.White;
@@ -264,10 +264,10 @@
             this.panel.ResumeLayout(false);
             this.panelEncabezado.ResumeLayout(false);
             this.panelEncabezado.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimizarVentana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrarVentana)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

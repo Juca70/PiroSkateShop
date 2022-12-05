@@ -66,7 +66,7 @@
             this.lblAgregarArticulo.AutoSize = true;
             this.lblAgregarArticulo.BackColor = System.Drawing.Color.Transparent;
             this.lblAgregarArticulo.Font = new System.Drawing.Font("Lucida Sans", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarArticulo.Location = new System.Drawing.Point(391, 97);
+            this.lblAgregarArticulo.Location = new System.Drawing.Point(354, -7);
             this.lblAgregarArticulo.Name = "lblAgregarArticulo";
             this.lblAgregarArticulo.Size = new System.Drawing.Size(472, 45);
             this.lblAgregarArticulo.TabIndex = 0;
@@ -104,9 +104,9 @@
             this.pAgregarArticulo.Controls.Add(this.lblCategorias);
             this.pAgregarArticulo.Controls.Add(this.lblSeparador1);
             this.pAgregarArticulo.Controls.Add(this.lblNuevoArticulo);
-            this.pAgregarArticulo.Location = new System.Drawing.Point(124, 165);
+            this.pAgregarArticulo.Location = new System.Drawing.Point(87, 61);
             this.pAgregarArticulo.Name = "pAgregarArticulo";
-            this.pAgregarArticulo.Size = new System.Drawing.Size(1005, 604);
+            this.pAgregarArticulo.Size = new System.Drawing.Size(1005, 576);
             this.pAgregarArticulo.TabIndex = 1;
             // 
             // cbCategorias
@@ -484,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 906);
+            this.ClientSize = new System.Drawing.Size(1180, 706);
             this.Controls.Add(this.pAgregarArticulo);
             this.Controls.Add(this.lblAgregarArticulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -46,7 +46,7 @@
             this.button5.Font = new System.Drawing.Font("Lucida Sans", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.HerramientasInicio;
-            this.button5.Location = new System.Drawing.Point(781, 473);
+            this.button5.Location = new System.Drawing.Point(752, 343);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 244);
@@ -67,7 +67,7 @@
             this.button4.Font = new System.Drawing.Font("Lucida Sans", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.ReporteInicio;
-            this.button4.Location = new System.Drawing.Point(497, 473);
+            this.button4.Location = new System.Drawing.Point(468, 343);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 244);
@@ -88,7 +88,7 @@
             this.button3.Font = new System.Drawing.Font("Lucida Sans", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.CarritoInicio;
-            this.button3.Location = new System.Drawing.Point(213, 473);
+            this.button3.Location = new System.Drawing.Point(184, 343);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(244, 244);
@@ -109,7 +109,7 @@
             this.button1.Font = new System.Drawing.Font("Lucida Sans", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.ConsultarInicio;
-            this.button1.Location = new System.Drawing.Point(643, 189);
+            this.button1.Location = new System.Drawing.Point(614, 59);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 244);
@@ -130,7 +130,7 @@
             this.button2.Font = new System.Drawing.Font("Lucida Sans", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::Pyroskateshop_Inventory_System.Properties.Resources.AgregarInicio;
-            this.button2.Location = new System.Drawing.Point(353, 189);
+            this.button2.Location = new System.Drawing.Point(324, 59);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 244);
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 906);
+            this.ClientSize = new System.Drawing.Size(1180, 650);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
