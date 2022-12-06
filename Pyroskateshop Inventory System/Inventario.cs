@@ -35,6 +35,12 @@ namespace Pyroskateshop_Inventory_System
                 dataGridView1.Rows[row].Cells[8].Value = articulo.CostoDolares;
                 dataGridView1.Rows[row].Cells[9].Value = articulo.PrecioVenta;
                 dataGridView1.Rows[row].Cells[10].Value = articulo.Estado;
+
+                if (articulo.Estado == "Inactivo")
+                {
+                    dataGridView1.Rows[row].DefaultCellStyle.BackColor = Color.Red;
+                }
+
             }
         }
 

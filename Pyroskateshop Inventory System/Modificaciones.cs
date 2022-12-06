@@ -32,7 +32,15 @@ namespace Pyroskateshop_Inventory_System
             tbMedida.Text = articulo.Medida;
             tbCantidad.Text = articulo.CantExistencia.ToString();
             tbPrecioCompra.Text = articulo.CostoCompra.ToString();
-            tbPrecioDolares.Text = articulo.CostoDolares.ToString();
+
+            string costoDolares = articulo.CostoDolares.ToString();
+
+            if (costoDolares != "0.00")
+            {
+                cbDolares.Checked = true;
+            }
+
+            tbPrecioDolares.Text = costoDolares;
             tbPrecioVenta.Text = articulo.PrecioVenta.ToString();
         }
 
@@ -70,7 +78,6 @@ namespace Pyroskateshop_Inventory_System
                 {
                     medida = "N/A";
                     costod = 0;
-
                 }
                 else
                 {
@@ -92,7 +99,15 @@ namespace Pyroskateshop_Inventory_System
                     articulo.CostoCompra = costoc;
                     articulo.CostoDolares = costod;
                     articulo.PrecioVenta = preciov;
-                    articulo.Estado = "Activo";
+
+                    if (cant > 0)
+                    {
+                        articulo.Estado = "Activo";
+                    }
+                    else
+                    {
+                        articulo.Estado = "Inactivo";
+                    }
 
                     manager.ArticuloTable.Modificar(articulo);
 
@@ -107,6 +122,45 @@ namespace Pyroskateshop_Inventory_System
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void tbPrecioCompra_TextChanged(object sender, System.EventArgs e)
+        {
+            if (cbDolares.Checked)
+            {
+                Convertir();
+            }
+        }
+
+        private void Convertir()
+        {
+            string text = tbPrecioCompra.Text;
+
+            if (text != "")
+            {
+                decimal costoCompra = decimal.Parse(text);
+                decimal costoDolares = costoCompra * 0.051m;
+
+                text = costoDolares.ToString("F2");
+            }
+            else
+            {
+                text = "";
+            }
+
+            tbPrecioDolares.Text = text;
+        }
+
+        private void cbDolares_Click(object sender, System.EventArgs e)
+        {
+            if (cbDolares.Checked)
+            {
+                Convertir();
+            }
+            else
+            {
+                tbPrecioDolares.Text = "";
+            }
         }
     }
 }

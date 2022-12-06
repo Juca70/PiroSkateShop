@@ -139,5 +139,44 @@ namespace Pyroskateshop_Inventory_System
                 e.Handled = true;
             }
         }
+
+        private void tbPrecioCompra_Leave(object sender, EventArgs e)
+        {
+            if (cbDolares.Checked)
+            {
+                Convertir();   
+            }
+        } 
+        
+        private void Convertir()
+        {
+            string text = tbPrecioCompra.Text;
+
+            if (text != "")
+            {
+                decimal costoCompra = decimal.Parse(text);
+                decimal costoDolares = costoCompra * 0.051m;
+
+                text = costoDolares.ToString("F2");
+            }
+            else
+            {
+                text = "";
+            }
+
+            tbPrecioDolares.Text = text;
+        }
+
+        private void cbDolares_Click(object sender, EventArgs e)
+        {
+            if (cbDolares.Checked)
+            {
+                Convertir();
+            }
+            else
+            {
+                tbPrecioDolares.Text = "";
+            }
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.lblCategorias = new System.Windows.Forms.Label();
             this.lblSeparador1 = new System.Windows.Forms.Label();
             this.lblNuevoArticulo = new System.Windows.Forms.Label();
+            this.cbDolares = new System.Windows.Forms.CheckBox();
             this.pAgregarArticulo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@
             // 
             this.pAgregarArticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.pAgregarArticulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pAgregarArticulo.Controls.Add(this.cbDolares);
             this.pAgregarArticulo.Controls.Add(this.cbCategorias);
             this.pAgregarArticulo.Controls.Add(this.btnGuardar);
             this.pAgregarArticulo.Controls.Add(this.lblSeparador2);
@@ -198,6 +200,7 @@
             // 
             this.tbPrecioDolares.BackColor = System.Drawing.Color.White;
             this.tbPrecioDolares.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPrecioDolares.Enabled = false;
             this.tbPrecioDolares.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPrecioDolares.ForeColor = System.Drawing.Color.Black;
             this.tbPrecioDolares.Location = new System.Drawing.Point(370, 426);
@@ -210,6 +213,7 @@
             // 
             this.btnPrecioDolares.BackColor = System.Drawing.Color.White;
             this.btnPrecioDolares.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnPrecioDolares.Enabled = false;
             this.btnPrecioDolares.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
             this.btnPrecioDolares.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnPrecioDolares.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -232,6 +236,7 @@
             this.tbPrecioCompra.Size = new System.Drawing.Size(262, 18);
             this.tbPrecioCompra.TabIndex = 43;
             this.tbPrecioCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPrecioCompra_KeyPress);
+            this.tbPrecioCompra.Leave += new System.EventHandler(this.tbPrecioCompra_Leave);
             // 
             // btnPrecioCompra
             // 
@@ -374,7 +379,7 @@
             this.lblPrecioDolares.AutoSize = true;
             this.lblPrecioDolares.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecioDolares.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioDolares.Location = new System.Drawing.Point(353, 386);
+            this.lblPrecioDolares.Location = new System.Drawing.Point(354, 380);
             this.lblPrecioDolares.Name = "lblPrecioDolares";
             this.lblPrecioDolares.Size = new System.Drawing.Size(148, 18);
             this.lblPrecioDolares.TabIndex = 31;
@@ -429,7 +434,7 @@
             this.lblPrecioVenta.AutoSize = true;
             this.lblPrecioVenta.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecioVenta.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioVenta.Location = new System.Drawing.Point(672, 386);
+            this.lblPrecioVenta.Location = new System.Drawing.Point(671, 380);
             this.lblPrecioVenta.Name = "lblPrecioVenta";
             this.lblPrecioVenta.Size = new System.Drawing.Size(135, 18);
             this.lblPrecioVenta.TabIndex = 26;
@@ -440,7 +445,7 @@
             this.lblPrecioCompra.AutoSize = true;
             this.lblPrecioCompra.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecioCompra.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioCompra.Location = new System.Drawing.Point(34, 385);
+            this.lblPrecioCompra.Location = new System.Drawing.Point(32, 380);
             this.lblPrecioCompra.Name = "lblPrecioCompra";
             this.lblPrecioCompra.Size = new System.Drawing.Size(148, 18);
             this.lblPrecioCompra.TabIndex = 25;
@@ -479,6 +484,16 @@
             this.lblNuevoArticulo.Size = new System.Drawing.Size(158, 22);
             this.lblNuevoArticulo.TabIndex = 2;
             this.lblNuevoArticulo.Text = "Nuevo artículo";
+            // 
+            // cbDolares
+            // 
+            this.cbDolares.AutoSize = true;
+            this.cbDolares.Location = new System.Drawing.Point(508, 384);
+            this.cbDolares.Name = "cbDolares";
+            this.cbDolares.Size = new System.Drawing.Size(15, 14);
+            this.cbDolares.TabIndex = 52;
+            this.cbDolares.UseVisualStyleBackColor = true;
+            this.cbDolares.Click += new System.EventHandler(this.cbDolares_Click);
             // 
             // AgregarArticulo
             // 
@@ -529,5 +544,6 @@
         private System.Windows.Forms.Label lblSeparador2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ComboBox cbCategorias;
+        private System.Windows.Forms.CheckBox cbDolares;
     }
 }
